@@ -3,7 +3,11 @@ def max_value(numbers):
         in the list.
     """
     pass
-
+    largest = 0
+    for num in numbers:
+        if num > largest:
+            largest = num
+    return num
 
 if __name__ == "__main__":
     print(max_value([1, 12, 2, 42, 8, 3]))
